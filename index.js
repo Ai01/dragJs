@@ -10,7 +10,6 @@ const _drag = (fireEle, draggedEle, options) => {
 
   fireEle.addEventListener('mousedown', e => {
     startDrag = true;
-    draggedEle.style.position = 'absolute';
   });
 
   const mousemoveCb = e => {
