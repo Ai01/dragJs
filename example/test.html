@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css" />
+  </head>
+  <body>
+    <h1>dragJs掩饰</h1>
+    <p>需要使用静态服务访问</p>
+
+    <div>
+      <h2>一定范围拖动</h2>
+      <p>
+        蓝标无法拖出灰线
+      </p>
+      <div>
+        <div id="line"></div>
+        <div id="sign"></div>
+      </div>
+    </div>
+
+    <div>
+      <h2>可放置拖动</h2>
+      <p>
+        将球1拖拽进入门1，会被自动放置入门1，无法再次拖拽
+      </p>
+      <div>
+        <div id="ball">球1</div>
+        <div id="door">门1</div>
+      </div>
+    </div>
+
+    <div>
+      <h2>自定义拖动回调</h2>
+      <p>
+        将球2拖拽置门2内，门2背景会变红
+      </p>
+      <div>
+        <div id="ball1">球2</div>
+        <div id="door1">门2</div>
+      </div>
+    </div>
+
+    <script type="module" src="test.js"></script>
+  </body>
+</html>

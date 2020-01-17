@@ -1,0 +1,46 @@
+body {
+  padding-bottom: 50px;
+}
+
+#container {
+  margin: 30px;
+}
+
+#line {
+  width: 200px;
+  height: 15px;
+  border-radius: 2px;
+  background: gray;
+}
+
+#sign {
+  cursor: pointer;
+  height: 30px;
+  width: 15px;
+  background: blue;
+  position: relative;
+  top: -22px;
+  border-radius: 5px;
+}
+
+#ball,
+#ball1 {
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  cursor: move;
+  position: absolute;
+}
+
+#ball {
+  left: 600px;
+}
+
+
+#door,
+#door1 {
+  width: 500px;
+  height: 200px;
+  border: 1px solid red;
+}
