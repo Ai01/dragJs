@@ -1,4 +1,4 @@
-import drag from '../drag.js';
+import drag from '../index.js';
 
 // 普通拖动
 const ele = document.getElementById('sign');
