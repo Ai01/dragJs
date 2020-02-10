@@ -30,13 +30,10 @@ body {
   width: 100px;
   height: 100px;
   cursor: move;
-  position: absolute;
-}
-
-#ball {
   left: 600px;
+  position: absolute;
+  /*  为什么需要absolute*/
 }
-
 
 #door,
 #door1 {

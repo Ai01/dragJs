@@ -1,4 +1,4 @@
-import drag from '../index.js';
+import drag, { getElementFromPoint } from '../index.js';
 
 // 普通拖动
 const ele = document.getElementById('sign');
@@ -23,10 +23,8 @@ const onmousemoveForBall = e => {
 
   // 找到下面的元素。如果是door。那么停止移动
   ball1.hidden = true;
-  let elemBelow = document.elementFromPoint(e.clientX, e.clientY);
+  let elemBelow = getElementFromPoint(e.clientX, e.clientY);
   ball1.hidden = false;
-
-  if (!elemBelow) return;
 
   if (elemBelow === door1) {
     door1.style.background = 'red';
