@@ -6,7 +6,6 @@ const _drag = (fireEle, draggedEle, options) => {
   if (!fireEle || !draggedEle) return;
 
   const {
-    draggedElePositionStyle, // 被拖拽元素的position模式，有relative，absolute两种可能
     droppedEle, // 被放置的对象
     once, // 是否只拖动一次
     disabledX, // x轴无法拖动
@@ -22,7 +21,7 @@ const _drag = (fireEle, draggedEle, options) => {
   let startDrag = false;
 
   // 触发元素的mousedown事件决定是否开始拖拽
-  fireEle.addEventListener('mousedown', e => {
+  fireEle.addEventListener('mousedown', () => {
     startDrag = true;
   });
 
